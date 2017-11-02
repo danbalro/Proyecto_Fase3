@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="pagina, html5, css3,">
+<meta name="Description" content="Pagina Web con HTML y CSS# - Fase Construccion">
+
+
+<title>Lecturas</title>
+
+<link rel="stylesheet" href="css/lectura2.css">
+<link href="https://file.myfontastic.com/PFe4cWsymZAJ3dCCsFncHS/icons.css" rel="stylesheet">
+
+</head>
+
+   
+     <body>
+    
+<div id="contenedor">
+     
+       
+        <div id="cabecera" align="center">      
+           <font color="#F47920">
+            <br><h2>LECTURA 2: PHP Y MYSQL
+</h2>
+           </font>
+        </div>    
+        
+        <div id="contenido" >
+            <div id="lectura2" style="color: #FFFFFF"> 
+            
+                <p>
+                   <br>
+                   En este apartado solo nos vamos a centrar en el uso de php con mysql, ya que sql es un lenguaje en particular, y muy generalizado. Normalmente, para la administración de bases de datos mysql, se usa PhpMyAdmin, una interfaz muy amigable con la que manejar las db. Así que comencemos.
+                   <br><br>
+                   
+                   <h2 align="center" style="color: #F47920">Conexion</h2>
+                   <br>
+                   Lo primero que se debe realizar siempre, es la conexión de php con mysql. Para conectar con una base de datos, se usa la función mysql_connect(), donde deberemos indicar el servidor, el usuario y la clave. <br><br> Aquí un ejemplo:
+                   <br><br>
+                   <img src="img/img-lectura2/imag1.png">
+                   <br><br>
+                   En las variables dbhost, dbuser, y dbpass, definimos el servidor, el usuario y la clave de nuestro servidor mysql. Y en la variable $conx, creamos la variable de conexión. A continuación, tenemos que seleccionar, dentro del servidor, la base de datos que queremos usar: <br><br>Aquí un ejemplo:
+                    <br><br>
+                   <img src="img/img-lectura2/imag2.png">
+                    <br><br>
+                   <h2 align="center" style="color: #F47920">Primera Consulta</h2>
+                   <br><br>
+                   Bien, llegados a este punto vamos a crear nuestra primera consulta. Vamos a contar con que el código de conexión y de selección de la DB lo tenemos escrito en el archivo conectar.php, y para ahorrarnos unas líneas, vamos a incluirlo en vez de reescribirlo. 
+                   <br><br>Para hacer una consulta, se usa la siguiente sintaxis: $sentencia = "SELECT [columna1, columna2] FROM nombre_tabla"; y después se ejecuta la consulta. Por último, se almacenan los datos en un array con la función mysql_fetch_array($nombredelapeticion).
+                   <br><br> Aquí un ejemplo:
+                    <br><br>
+                   <img src="img/img-lectura2/imag3.png">
+                    <br><br>
+                   El código anterior nos mostraría todos los usuarios y sus claves de la tabla usuarios. <br><br>
+                   <b><h2 align="center" style="color: #F47920">Nota:</h2></b> Si en vez de usuario y apellidos, que es seleccionar determinadas columnas de la tabla, usamos un asterisco (*), se seleccionarían todas las columnas de la tabla. <br><br>
+                   Bien, con eso lo que hemos hecho es seleccionar todos los registros existentes; pero, ¿y si queremos, usando el ejemplo anterior, la clave de determinado usuario? Para ello usaríamos WHERE.<br><br> 
+                   Aquí un ejemplo:
+                   <br><br>
+                   <img src="img/img-lectura2/imag4.png">
+                   <br><br>
+                   La idea es simple. En pseudocódigo sería algo como: Selecciona todos los datos del usuario pedro de la tabla usuarios. Se pueden ir añadiendo "filtros" como queramos: 
+                   <br>...WHERE usuario='pedro' AND nombre='pedro picapiedra'...
+                   <br><br>
+                <b><h2 align="center" style="color: #F47920">Nota:</h2></b> Importante recordar usar siempre comillas simples al asignar valores. Es decir, es así: ...usuario='pedro'... no así: ...usuario="pedro".<br><br>
+                   <b>Nota2:</b> Para usar variables se usa igual: ...usuario='$miusuario'...<br><br>
+                   Y por último, hay más añadidos a la sentencia como ORDER BY nombre ASC (donde ordena alfabéticamente por el nombre en ASCendente) o LIMIT 0,30 la cual nos dará los resultados del registro 0 al 30 únicamente.<br><br>
+                   También podemos obtener en número de registros obtenidos con la función mysql_num_rows($nombredelapeticion). Que nos devolveria, por ejemplo: 5, si tenemos 5 registros en nuestra tabla.
+                   <br><br>
+                   <h2 align="center" style="color: #F47920">Insertar Datos:</h2>
+                   <br><br>
+                   Para insertar datos, basta con indicar que columnas se van a insertar, y luego asignarle los valores a esas columnas. La sintaxis es:<br>
+                   $consulta = "INSERT INTO [nombre_tabla] ([columna1], [columna2],...,[columnaN]) VALUES ('$var1', '$var2',..., '$varN')";<br>
+                   Aquí un ejemplo (sin usar variables, son con texto):<br><br>
+                   <img src="img/img-lectura2/imag5.png">
+                   <br><br>
+                   <h2 align="center" style="color: #F47920">Actualizar Datos:</h2>
+                   <br><br>
+                   Para actualizar, basta con indicar que columna se quiere cambiar, por el qué se quiere cambiar, y a quien se quiere cambiar. la sintaxis sería:<br><br>                $consulta = "UPDATE [nombre_tabla] SET [columna1]='$valor1', [columna2]='$valor2' WHERE [columna3]='$valor3'";<br><br>
+                   Aquí un ejemplo (sin usar variables, son con texto):<br><br>
+                   <img src="img/img-lectura2/imag6.png">
+                   <br><br>
+                   
+                   <h2 align="center" style="color: #F47920">Borrar Datos</h2>
+                   <br><br>
+                   Para borrar datos, basta con indicar a quien se quiere borrar o el que. La sintaxis sería:
+                   $consulta = "DELETE [nombre_tabla] WHERE [columna1]='$valor1'";<br>Aquí un ejemplo (sin usar variables, son con texto):
+                   <br><br>
+                   <img src="img/img-lectura2/imag7.png">
+
+                </p>
+            </div>
+        </div>
+        <div id="boton">
+            <div id="botones">
+                
+                <a href="index.html"><span class="icon-volver"  style="color: #17202A"></span></a>
+                
+                <a href="#top"><span class="icon-arriba"  style="color: #17202A"></span></a>
+                <br>
+                <p style="color: black">Copyright © 2017, Daniel Balanta, Rolando Barrios. All Rights Reserved</p>
+            </div>
+        </div> 
+        </div>
+    </body>
+</html>    

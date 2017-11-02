@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="pagina, html5, css3,">
+<meta name="Description" content="Pagina Web con HTML y CSS# - Fase Construccion">
+
+<title>Pagina Web</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+<link href="https://file.myfontastic.com/PFe4cWsymZAJ3dCCsFncHS/icons.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+ $(document).ready(Function(e){
+        $('#banner').load('http://google.com', function(data) {
+     $(this).html(data);
+ });
+    });
+</script>
+
+</head>
+
+   
+<body>
+
+    <div id="contenedor">
+        
+        <div id="cabecera" align="center" >
+           <font color="white"> 
+           <br><H1>VINCULACION DE BASE DE DATOS A UNA PAGINA CON PHP</H1>
+           </font>
+          <!-- <pan class="icon-twitter" id=""></pan> -->
+            
+        </div>
+    <div id="contenido">
+        <div id="menu" class="contenedor-menu"> <br> <font size="4" color="white"><center><b>Menu de Opciones</b></center> </font><br><br>
+        <ul class="menu">
+            <li><a href="#"><span class="icon-home"></span>Inicio</a></li>
+            <li><a href="#"><span class="icon-lectura"></span>Lecturas</a>
+                <ul>
+                    <li><a href="lecturas.html"><span class="icon-lectura"></span>Lectura 1</a></li>
+                    <li><a href="lectura2.html"><span class="icon-lectura"></span>Lectura 2</a></li>
+                    <li><a href="lectura3.html"><span class="icon-lectura"></span>Lectura 3</a></li>
+                </ul>
+            </li>
+            <li class:"activado"><a href=""><span class="icon-multimedia"></span>Multimedia</a>
+                <ul>
+                    <li><a href="videos.html"><span class="icon-video"></span>Videos</a></li>
+                    <li><a href="imagenes.html"><span class="icon-foto"></span>Imagenes</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><span class="icon-juegos"></span>Actividades</a>
+                <ul>
+                    <li><a href="https://www.cerebriti.com/juegos-de-tecnologia/consultas-base-de-datos-#.WfkvRVvWzIU"><span class="icon-actividades"></span>Actividad 1</a></li>
+                    <li><a href="#"><span class="icon-actividades"></span>Actividad 2</a></li>
+                    <li><a href="#"><span class="icon-actividades"></span>Actividad 3</a></li>
+                    <li><a href="https://www.cerebriti.com/juegos-de-tecnologia/html#.Wfk011vWzIU"><span class="icon-actividades"></span>Actividad 4</a></li>
+                    <li><a href="https://www.cerebriti.com/juegos-de-tecnologia/sql-joins#.WfkzKFvWzIU"><span class="icon-actividades"></span>Actividad 5</a></li>
+                    <li><a href="https://www.cerebriti.com/juegos-de-tecnologia/juego-y-aprendo-html#.Wfk0xVvWzIU"><span class="icon-actividades"></span>Actividad 6</a></li>
+                </ul>
+            </li>
+            <li><a href="autores.html"><span class="icon-autores"></span>Autores</a></li>            
+        </ul>
+        
+        <br>
+ <a class="twitter-timeline" data-lang="es" data-width="220" data-height="220" data-theme="light" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <br><br<br><br>
+        <center>
+        <a href="#" title="Contador de Visitas"><img src="https://www.cerotec.net/contador.php?t=42&s=3&i=112393" alt="Contador de Visitas" class="img-contador"></a> 
+        <br><a href='#' style='font-size:14px;' class="contador">Contador de Visitas</a>
+        </center>
+        </div>
+        <div id="banner">
+        <br>
+        <h2>Introduccion:</h2>
+        <br>
+        <p style="color: currentColor" align="justify" > 
+            La siguiente pagina fue desarrollada por <b><u>Daniel Steeven Balanta</u></b> y <b><u>Rolando Barrios</u></b> estudiantes de la Universidad Nacional Abierta y a Distancia, quienes cursan el programa de Ingenieria en Sistemas.
+            La informacion encontrada es de autoria propia y busca informar los metodos y procesos para enlazar una pagina con codigo HPH hacia una base de datos (MySQL), el contenido se compone de lecturas, videos, imagenes y juegos que ayudan a comprender las tematicas.
+            <br><bR>
+            <UL type="disc">
+               <LI>Lecturas
+               <LI>Imagenes
+               <LI>Videos
+               <LI>Juegos
+            </UL>
+                  <br>
+                   <h2>Objetivos del Curso:</h1>
+                   <br>
+                   <p>Crar un repositorio en la aplicacion <b>GitHub</b> con el fin de realizar el desarrollo de una pagina WEB que contenga lenguaje HTML y CSS, conocer el codigo de programacion y desarrollar metodos y practicas de programacion.<br>
+                   Explicar la tematica seleccionada por el grupo mediante el contenido que se exponga en la pagina web, en este caso la tematica es: CONEXION DE UNA PAGINA CON LENGUAJE PHP HACIA BASE DE DATOS SQL.
+                   
+                   </p>
+            <br>       
+            <img id="FotoPHP" src="img/phpmysql.jpg">
+            
+        </p>
+        
+        </div>
+    </div>
+       
+        <div id="footer">         
+            
+                <div id="referencia" class="referencias"><center>
+                    <font color="white" size="3">Universidad Nacional Abierta y a Distancia<br></font>
+                    <font color="white" size="3">Sede nacional José Celestino Mutis: Calle 14 sur No. 14 - 23<br></font>
+                    <font color="white" size="2">PBX:(+57) 1 344 3700 Bogotá D.C., Colombia <br></font>
+                    <font color="white" size="1">Línea nacional gratuita desde Colombia: 018000115223<br></font>
+                    <font color="white" size="1">Atención al usuario: atencionalusuario@unad.edu.co<br></font>
+                    <font color="white" size="1">Anticorrupción: anticorrupcion@unad.edu.co<br></font>
+                    <font color="white" size="1">Copyright © 2017, Daniel Balanta, Rolando Barrios. All Rights Reserved</font>
+                    </center>
+                </div>
+                
+                <div id="logo" class="logos">
+                    <img src="img/logounad.png">
+                </div>      
+        </div>        
+    </div>    
+</body>
+</html> 
