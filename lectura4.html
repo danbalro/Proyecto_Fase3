@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="pagina, html5, css3,">
+<meta name="Description" content="Pagina Web con HTML y CSS# - Fase Construccion">
+
+
+<title>Lecturas</title>
+
+<link rel="stylesheet" href="css/lectura4.css">
+<link href="https://file.myfontastic.com/PFe4cWsymZAJ3dCCsFncHS/icons.css" rel="stylesheet">
+
+</head>
+
+   
+     <body>
+    
+<div id="contenedor">
+     
+       
+        <div id="cabecera" align="center">      
+           <font color="#F0B429">
+            <br><h2>LECTURA 4: CONEXION A BASE DE DATOS MICROSOFT SQL SERVER
+</h2>
+           </font>
+        </div>    
+        
+        <div id="contenido" >
+            <div id="lectura2" style="color: #FFFFFF"> 
+            
+                <p>
+                <br>
+                <h2 style="color: #A54686">sqlsvr_connect</h2>
+                <br>
+                sqlsrv_connect - Abre conexion con base de datos Microsoft SQL Server
+                <br><br>
+                <H2 style="color: #A54686">Descripción</H2>
+                <br>
+                <img src="img/img-lectura4/imag1.PNG">
+                <br>
+                Abre una conexión a una base de datos Microsoft SQL Server. Por defecto, la conexión se intenta utilizando la autenticación Windows. Para conectar utilizando la autenticación SQL Server, incluir "UID" y "PWD" en el array de opciones de conexión.
+                <br><br>
+                <h2 style="color: #A54686">Parametros</h2>
+                <br>
+                <b>serverName:</b><br>
+El nombre del servidor en el que se ha establecido una conexión. Para conectar a una instancia específica, poner una barra invertida después del nombre de servidor e indicar el nombre de la instancia (e.g. NombreServidor\sqlexpress).
+               <br><br>
+               <b>connectionInfo</b><br>
+Un array asociativo que especifica las opciones de conexión al servidor. Si no se ha especificado ningún valor para el UID y PWD, la conexión se intentará utilizando la autenticación Windows. Para una lista completa de claves soportadas, ver » Opciones de Conexión SQLSRV.
+               <br><br>
+               <h2 style="color: #A54686">Valores Devueltos</h2>
+               <br>
+               Un recurso de conexión. Si no se puede abrir la conexión, se retorna el valor <b>FALSE</b>.
+               <br><br>
+               <h2 style="color: #A54686">Ejemplos:</h2>
+               <br>
+               Ejemplo #1 Conectar utilizando autenticación Windows.
+               <br><br>
+               <img src="img/img-lectura4/imag2.PNG" width="750px">
+               <br><br>
+               Ejemplo #2 Conectar especificando nombre de usuario y contraseña.
+               <br><br>
+               <img src="img/img-lectura4/imag3.PNG" width="750px">
+               <br><br>
+               Ejemplo #3 Conectar a un puerto específico.
+               <br><br>
+                <img src="img/img-lectura4/imag4.PNG" width="750px">                
+                </p>
+            </div>
+        </div>
+        <div id="boton">
+            <div id="botones">
+                
+                <a href="index.html"><span class="icon-volver"  style="color: #17202A"></span></a>
+                
+                <a href="#top"><span class="icon-arriba"  style="color: #17202A"></span></a>
+                <br>
+                <p style="color: black">Copyright © 2017, Daniel Balanta, Rolando Barrios. All Rights Reserved</p>
+            </div>
+        </div> 
+        </div>
+    </body>
+</html>    
